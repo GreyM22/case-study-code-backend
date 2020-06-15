@@ -1,0 +1,35 @@
+{
+  "name": "task",
+  "version": "0.0.0",
+  "scripts": {
+    "start": "node server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+http://arcane-lowlands-8408.herokuapp.com"
+  },
+  "author": "grei muka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GreyM22/case-study/issues"
+  },
+  "homepage": "https://github.com/GreyM22/case-study#readme",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.19.2",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "jquery": "^3.5.1",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql2": "^2.1.0",
+    "path": "^0.12.7",
+    "sequelize": "^5.21.10",
+    "tslib": "^1.10.0",
+    "zone.js": "~0.9.1"
+  },
+  "engines": {
+    "node": "10.x"
+  }
+}
