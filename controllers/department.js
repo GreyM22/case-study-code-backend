@@ -25,12 +25,11 @@ exports.getDepartments = (req, res, next) => {
   const limit = +req.query.pageSize;
   const offset = (+req.query.pageNumber - 1) * limit;
   console.log(limit, offset)
-  if (limit & req.query.pageNumber) {
+  if (limit && req.query.pageNumber) {
     Department
       .findAndCountAll({
         limit,
         offset,
-        where: {}
       })
       .then(departments => {
         if (departments.count < offset) {
