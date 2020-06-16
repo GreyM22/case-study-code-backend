@@ -75,7 +75,9 @@ sequelize
     return Promise.resolve(superAdmin);
   })
   .then(superAdmin => {
-    if (process.env.PORT) {app.listen(process.env.PORT);}
+    if (process.env.PORT) {
+      app.listen(process.env.PORT);
+    }
     else {app.listen(3000);}
   })
   .catch(err => console.log(err));
